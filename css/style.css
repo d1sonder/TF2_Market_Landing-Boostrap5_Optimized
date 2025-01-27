@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'Ruthless Sketch';
+    src: url('../fonts/ofont.ru_Ruthless\ Sketch.ttf') format('truetype'); /* добавьте другие форматы, если требуется */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Ruthless Sketch', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section:not(.section0) {
+    text-shadow: 
+    -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+.video-bg {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.video-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.effects {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+.video-bg__content {
+    z-index: 2;
+    color: #ffffff;
+}
+.h1{
+    font-size: 340%;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 12%;
+}
+.btn{
+    width: 15%;
+    font-size: 130%;
+}
+.p{
+    margin-top: 1%;
+    font-size: 80%;
+}
+.d-flex.flex-column.mb-3{
+    width: 35%;
+}
+.section2 {
+    position: relative; /* Устанавливаем относительное позиционирование для родительского элемента */
+    padding-top: 10%;
+    padding-bottom: 5%;
+    background-image: url('../img/3.webp');
+    background-size: cover;
+    overflow: hidden; /* Скрываем лишнюю часть псевдо-элемента */
+}
+
+.section2::before {
+    content: ''; /* Создаем пустой содержимое для псевдо-элемента */
+    position: absolute; /* Устанавливаем абсолютное позиционирование */
+    top: 0; /* Начиная с верхней части родителя */
+    left: 0; /* Начиная с левой части родителя */
+    right: 0; /* Находимся до правой части родителя */
+    bottom: 0; /* Находимся до нижней части родителя */
+    background-color: rgba(0, 0, 0, 0.5); /* Черный цвет с 50% прозрачностью */
+    z-index: 1; /* Устанавливаем уровень над фоном, ниже других элементов */
+}
+
+
+
+.section2 > * {
+    position: relative; /* Устанавливаем относительное позиционирование для дочерних элементов */
+    z-index: 2; /* Повышаем уровень над псевдо-элементом */
+}
+
+.img-plane{
+    width: 10%;
+}
+.img-plane1{
+    width: 7.7%;
+}
+.vertical-hr {
+    border-left: 1px solid gray;
+    height: 100%;
+}
+
+/* Убедитесь, что изображение адаптивное */
+img {
+    max-width: 100%; /* изображение не будет выходить за пределы родительского контейнера */
+    height: auto; /* сохраним соотношение сторон */
+}
+
+.section1{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/1.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+.sec-art1{
+    margin-top: 3%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-art2{
+    width: 45%;
+    height: 45vw;
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.div-sec1{
+    width: 80%;
+}
+.text-sec1{
+    font-size: 50px;
+    color: rgb(227, 74, 74);
+}
+.text-sec2{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-shadow: 
+                -1px -1px 0 white,  
+                1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white;
+}
+.text-sec3{
+    font-size: 110%;
+    color: rgb(0, 0, 0);
+    text-shadow: 
+                -1px -1px 0 white,  
+                1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white;
+}
+.sec1-h1{
+    font-size: 150%; color: red;
+}
+.sec1-div{
+    font-size: 230%;
+}
+.sec1-div2{
+    margin-top: 5%;
+}
+.sec2-t{
+    font-size: 110%;
+}
+.sec2-t2{
+    font-size: 80%; color: gray;
+     margin-top: 3%;
+    text-align:center;
+}
+
+.carousel1{
+    margin-left: 45%;
+}
+.carousel-img{
+    width: 30%; border-radius: 20px;
+}
+.carousel-h2{
+    margin-left: 5%;
+}
+.carousel-h4{
+    color: red; margin-left: 5%;
+}
+.carousel-h5{
+    width: 30%; text-align: center;
+}
+
+
+.section5{
+    position: relative;
+    padding-top: 5%; 
+    padding-bottom: 5%; 
+    background-image: url('../img/9.webp'); 
+    background-size: cover;
+    overflow: hidden; 
+}
+.section5::before{
+    content: ''; /* Создаем пустой содержимое для псевдо-элемента */
+    position: absolute; /* Устанавливаем абсолютное позиционирование */
+    top: 0; /* Начиная с верхней части родителя */
+    left: 0; /* Начиная с левой части родителя */
+    right: 0; /* Находимся до правой части родителя */
+    bottom: 0; /* Находимся до нижней части родителя */
+    background-color: rgba(0, 0, 0, 0.5); /* Черный цвет с 50% прозрачностью */
+    z-index: 1; /* Устанавливаем уровень над фоном, ниже других элементов */
+}
+
+.section5 > * {
+    position: relative; /* Устанавливаем относительное позиционирование для дочерних элементов */
+    z-index: 2; /* Повышаем уровень над псевдо-элементом */
+}
+
+.img-sec5{
+    width: 19%;
+    margin: 0.5%;
+    margin-top: 10%;
+}
+
+.text-sec1{
+    text-align: center;
+}
+.text-sec2{
+    text-align: center;
+}
+.text-sec3{
+    text-align: center;
+}
+.d-flex.justify-content-center.t{
+    width: 40%;
+    margin-left: 30%;
+}
+.text-sec2.t{
+    color: red;
+    margin-top: 10%;
+}
+.img-sec6{
+    margin-top: 15%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+@media (max-width: 720px) {
+    .section1 {
+        flex-direction: column; /* На мобильных устройствах меняем направление на колонку */
+    }
+    .sec-art1{
+        width: 100%;
+        text-align: center;
+    }
+    .sec-art2{
+        width: 100%;
+    }
+    .d-flex.justify-content-center{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .btn.btn-danger{
+        width: 30%;
+    }
+    .sec-art3{
+        margin-left: 30%;
+    }
+    .carousel1{
+        margin-left: 33%;
+    }
+    .carousel-img{
+        width: 100%;
+    }
+    .carousel-h2{
+        margin-left: 12%;
+    }
+    .carousel-h4{
+    margin-left: 4%;
+    }
+    .carousel-h5{
+    font-size: 3.5vw;
+    }
+    .row.x{
+        flex-direction: column;
+    }
+    .form-control{
+        margin: 0.5%;
+    }
+    .col{
+        margin-top: 1%;
+    }
+    .btn.btn-primary{
+        width: 55%;
+        margin-left: 20%;
+    }
+}
+.sec-art3{
+    width: 45%;
+    height: 45vw;
+    background-image: url(../img/9.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.section7{
+    background-color:  #793a16;
+}
+.row.x{
+    width: 120%;
+    margin-top: 10%;
+}
+.btn.btn-primary{
+    background-color:#dc3545;
+    border: 1px solid #dc3545;
+    transition: 0.5s;
+    padding: 0;
+}
+.btn.btn-primary:hover{
+    scale: 1.2;
+    color: #793a16;
+}
+.form-text{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.footer.x{
+    width: 10%;
+}
+.ms-3{
+    width: 5%;
+}
+.py-5{
+    width: 98%;
+    margin-left: 1%;
+    
+}
+.nav-link.p-0.text-body-secondary{
+    color:rgb(175, 175, 175);
+}

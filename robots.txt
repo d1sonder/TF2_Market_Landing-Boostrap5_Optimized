@@ -1,0 +1,20 @@
+User-agent: Yandex
+Disallow: /wp-admin/
+Disallow: /?s=
+Disallow: /blog/tag/
+Disallow: /blog/tariffs/
+Disallow: /*.html
+
+User-agent: Googlebot
+Disallow: /wp-admin/
+Disallow: /?s=
+Disallow: /blog/tag/
+Disallow: /blog/tariffs/
+Disallow: /*.html
+
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /?s=
+Disallow: /blog/tag/
+Disallow: /blog/tariffs/
+Disallow: /*.html
